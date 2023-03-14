@@ -10,6 +10,9 @@ a{
     text-decoration: none;
     color: inherit;
 }
+body{
+    background: #fff;
+}
 
 /* NAVBAR */
 nav{
@@ -51,6 +54,51 @@ nav .nav-btn{
     color: #000;
     display: none;
 }
+/* HOME */
+.home{
+    position: relative;
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.home h1{
+    font: bolder 80px 'Nova script';
+    color: #E26A2C;
+    z-index: 10;
+}
+.home p{
+    font: 400 23px 'Nova script';
+    font-style: italic;
+    z-index: 10;
+}
+.home .images img{
+    width: 180px;
+    height: 180px;
+}
+.home .images img:nth-of-type(1){
+    position: absolute;
+    top: 50%;
+    left: 12%;
+}
+.home .images img:nth-of-type(2){
+    position: absolute;
+    top: 30%;
+    left: 25%;
+}
+.home .images img:nth-of-type(4){
+    position: absolute;
+    top: 30%;
+    right: 25%;
+}
+.home .images img:nth-of-type(5){
+    position: absolute;
+    top: 48%;
+    right: 13%;
+}
 
 @media screen and (max-width: 800px) {
     nav{
@@ -90,6 +138,18 @@ nav .nav-btn{
         top: 1rem;
         right: 1rem;
         color: #000;
+    }
+
+    /* HOME */
+    .home{
+        padding: 0 1rem;
+    }
+    .home h1{
+        font: bolder 40px 'Nova script';
+    }
+    .home p{
+        font: 400 16px 'Nova script';
+        font-style: italic;
     }
 
 }
