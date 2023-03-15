@@ -4,6 +4,7 @@ import homeimg3 from '../images/6.png';
 import homeimg4 from '../images/25.png';
 import homeimg5 from '../images/150.png';
 import {FaArrowDown} from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 function Home(){
 
@@ -19,7 +20,9 @@ function Home(){
             <h1>WELCOME TO POKÉ</h1>
             <p>A site where you search for all of your favourite pokemon characters.</p>
             <div className="arrow-down">
-                <FaArrowDown />
+                <Link to="/character">
+                    <FaArrowDown />
+                </Link>
             </div>
         </section>
     )

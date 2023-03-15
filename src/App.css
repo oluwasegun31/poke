@@ -123,6 +123,7 @@ nav .nav-btn{
     }
     nav .nav-btn{
         display: flex;
+        color: #fff;
     }
     nav .nav-links{
         position: fixed;
@@ -135,7 +136,6 @@ nav .nav-btn{
         align-items: center;
         justify-content: center;
         background-color: #fff;
-        color: #000;
         transition: 1s;
         transform: translateX(-100%);
         padding: 1rem;
@@ -143,6 +143,7 @@ nav .nav-btn{
     }
     nav .nav-links a{
         margin-bottom: 1.8rem;
+        color: #000;
     }
     .nav-links a:hover{
         color: #E26A2C;
