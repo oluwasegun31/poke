@@ -116,6 +116,86 @@ nav .nav-btn{
         transform: translateY(55px);
     }
 }
+/* CHARACTERS */
+.characters{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 84vh;
+    gap: 1rem;
+    place-items: center;
+    padding: 1rem;
+}
+.input-btn{
+    position: absolute;
+    top: 2%;
+    height: 30px;
+}
+.input-btn input{
+    width: 150px;
+    height: 100%;
+    border: 1px solid #fff;
+    outline: none;
+    caret-color: #E26A2C;
+    padding-left: 1rem;
+    font: 900 18px 'Nova Script';
+    color: #fff;
+    background-color: #777676;
+    transform: skew(-20deg);
+}
+.input-btn button{
+    width: 50px;
+    height: 100%;
+    transform: skew(-20deg);
+    border: 0;
+    outline: none;
+    background-color: #E26A2C;
+    color: #fff;
+    cursor: pointer;
+    font: 900 18px 'Nova Script';
+}
+.character-image{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.c-images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.character-image .c-images img{
+    width: 250px;
+    height: 250px;
+}
+.character-image p{
+    font: 900 38px 'Nova Script';
+    color: #fff;
+}
+.c-name, .s-name{
+    color: #E26A2C;
+    text-transform: uppercase;
+}
+.character-stats, .stats-order{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    gap: 0.5rem;
+}
+.character-stats p{
+    font: 900 26px 'Nova Script';
+    color: #fff;
+}
+.stats-Mul{
+    display: flex;
+}
+.stats-Mul p{
+    margin-right: 1rem;
+}
+
 
 @media screen and (max-width: 800px) {
     nav{
