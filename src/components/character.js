@@ -21,6 +21,7 @@ function Character(){
     const submitHandle = (e)=>{
         e.preventDefault()
         setSubmitNum(inputNum)
+        setIsLoading(true)
     }
 
     useEffect(()=>{
