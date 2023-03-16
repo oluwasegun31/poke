@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import ErrorTemp from "./error";
 import Loader from "./loader";
 
 function Character(){
@@ -60,7 +61,7 @@ function Character(){
     return(
         <>
         {isLoading && <Loader />}
-        {isError && <p style={{color: '#fff'}}>{isError}</p>}
+        {isError && <ErrorTemp isError={isError}/>}
         <div className="characters">
             <form className="input-btn"
                 onSubmit={submitHandle}

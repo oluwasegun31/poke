@@ -207,8 +207,7 @@ nav .nav-btn{
     justify-content: center;
     align-items: center;
     background-color: #333232;
-    z-index: 19;
-}
+    z-index: 19;}
 @-webkit-keyframes hourglass-spin {
     0%, 10% {
       background-position: 0 90%; }
@@ -217,8 +216,7 @@ nav .nav-btn{
       background-position: 0 10%; }
     90%,
     100% {
-      background-position: 0 -70%; } 
-}
+      background-position: 0 -70%; } }
 @keyframes hourglass-spin {
     0%, 10% {
         background-position: 0 90%; }
@@ -227,9 +225,7 @@ nav .nav-btn{
         background-position: 0 10%; }
     90%,
     100% {
-        background-position: 0 -70%; } 
-}
-  
+        background-position: 0 -70%; }}
 @-webkit-keyframes hourglass-container-spin {
     0%,
     40% {
@@ -241,9 +237,7 @@ nav .nav-btn{
               transform: rotate(0deg); }
     100% {
       -webkit-transform: rotate(180deg);
-              transform: rotate(180deg); } 
-}
-  
+              transform: rotate(180deg); } }  
 @keyframes hourglass-container-spin {
     0%,
     40% {
@@ -255,15 +249,13 @@ nav .nav-btn{
               transform: rotate(0deg); }
     100% {
       -webkit-transform: rotate(180deg);
-              transform: rotate(180deg); } 
-}
+              transform: rotate(180deg); }}
 .hourglass {
     -webkit-animation: hourglass-container-spin 4s infinite;
     animation: hourglass-container-spin 4s infinite;
     height: 40px;
     position: relative;
-    width: 40px; 
-}
+    width: 40px;}
 .hourglass:after, .hourglass:before {
       background-size: 100% 300%;
       border-radius: 100%;
@@ -281,19 +273,33 @@ nav .nav-btn{
       content: '';
       position: absolute;
       background-image: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(50%, transparent), color-stop(50%, #E26A2C), #E26A2C);
-      background-image: linear-gradient(0deg, transparent, transparent 50%, #E26A2C 50%, #E26A2C); 
-}
+      background-image: linear-gradient(0deg, transparent, transparent 50%, #E26A2C 50%, #E26A2C);}
 .hourglass:after {
       -webkit-transform: translateY(-20px);
-              transform: translateY(-20px); 
-}
+              transform: translateY(-20px);}
 .hourglass:before {
       -webkit-animation-delay: -2s;
               animation-delay: -2s;
       animation-direction: reverse;
       -webkit-transform: translateY(20px);
-              transform: translateY(20px); 
-}
+              transform: translateY(20px);}
+/* ERROR */
+.errorMess{
+    position: absolute;
+    top: 0;
+    right: 50%;
+    width: 30%;
+    height: 50px;
+    margin: 3rem auto;
+    background: #E26A2C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-left: 8px solid #777676;}
+  .errorMess span{
+    font: 500 18px 'Nova Flat';
+    color: #fff;}
 @media screen and (max-width: 800px) {
     nav{
         justify-content: space-between;
@@ -337,17 +343,6 @@ nav .nav-btn{
     }
     /* HOME */
     .home{
-        padding: 0 1rem;
-    }
-    .home h1{
-        font: bolder 40px 'Nova script';
-    }
-    .home p{
-        font: 400 16px 'Nova script';
-        font-style: italic;
-    }
-    .home .images img{
-        width: 80px;
-        height: 80px;
+        display: none;
     }
 }
