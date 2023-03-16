@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import Loader from "./loader";
 
 function Character(){
     const [inputNum, setInputNum] = useState(1);
@@ -14,31 +15,51 @@ function Character(){
     const [pokeAbility, setPokeAbility] = useState(null);
     const [pokeStats, setPokeStats] = useState(null);
 
+    const [isLoading, setIsLoading] = useState(true);
+    const [isError, setIsError] = useState(null);
+
     const submitHandle = (e)=>{
         e.preventDefault()
         setSubmitNum(inputNum)
     }
 
     useEffect(()=>{
-        fetch(`https://pokeapi.co/api/v2/pokemon/${submitNum}`)
-            .then(res=>{
-                return res.json()
-            })
-            .then(data=>{
-                console.log(data)
-                setFrontDef(data.sprites.front_default)
-                setFrontShin(data.sprites.front_shiny)
-                setBackDef(data.sprites.back_default)
-                setBackShin(data.sprites.back_shiny)
-                setPokeName(data.name)
-                setPokeHeight(data.height)
-                setPokeWeight(data.weight)
-                setBaseExp(data.base_experience)
-                setPokeAbility(data.abilities)
-                setPokeStats(data.stats)
-            })
-    },[submitNum])
+       setTimeout(() => {
+            fetch(`https://pokeapi.co/api/v2/pokemon/${submitNum}`)
+                .then(res=>{
+                    if(!res.ok){
+                        throw Error('Unable to load your reequest')
+                    }
+                    return res.json()
+                })
+                .then(data=>{
+                    console.log(data)
+                    setFrontDef(data.sprites.front_default)
+                    setFrontShin(data.sprites.front_shiny)
+                    setBackDef(data.sprites.back_default)
+                    setBackShin(data.sprites.back_shiny)
+                    setPokeName(data.name)
+                    setPokeHeight(data.height)
+                    setPokeWeight(data.weight)
+                    setBaseExp(data.base_experience)
+                    setPokeAbility(data.abilities)
+                    setPokeStats(data.stats)
+                    
+                    setIsLoading(false)
+                    setIsError(null)
+                })
+                .catch(err=>{
+                    console.log(err.message)
+                    setIsError(err.message)
+                    setIsLoading(false)
+                })
+       }, 5000);
+    }, [submitNum])
+
     return(
+        <>
+        {isLoading && <Loader />}
+        {isError && <p style={{color: '#fff'}}>{isError}</p>}
         <div className="characters">
             <form className="input-btn"
                 onSubmit={submitHandle}
@@ -81,7 +102,7 @@ function Character(){
                         {pokeStats && pokeStats.map((item, pos)=>{
                             return(
                                 <div key={pos}>
-                                    <p>{item.stat.name} - <span className="s-name">{item.base_stat}</span></p>
+                                    <p>{item.stat.name} | <span className="s-name">{item.base_stat}</span></p>
                                 </div>
                             )
                         })}
@@ -89,6 +110,7 @@ function Character(){
                 </div>
             </section>
         </div>
+        </>
         
     )
 }

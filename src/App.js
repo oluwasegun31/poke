@@ -23,7 +23,9 @@ function App() {
         element={
           <section>
             <Navbar/>
-            <Character />
+            <div className="contain">
+              <Character />
+            </div>
           </section>
         }
       />
