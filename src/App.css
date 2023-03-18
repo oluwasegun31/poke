@@ -21,6 +21,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     padding: 1rem;
+    z-index: 10;
 }
 nav .logo {
     font: bolder 32px 'Nova script';
@@ -300,6 +301,15 @@ nav .nav-btn{
   .errorMess span{
     font: 500 18px 'Nova Flat';
     color: #fff;}
+/* ABOUT  */
+.about, .documentation{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 38px;}
 @media screen and (max-width: 800px) {
     nav{
         justify-content: space-between;

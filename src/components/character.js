@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import AnimatedPage from "./animationPage";
 import ErrorTemp from "./error";
 import Loader from "./loader";
 
@@ -59,6 +60,7 @@ function Character(){
     }, [submitNum])
 
     return(
+        <AnimatedPage >
         <>
         {isLoading && <Loader />}
         {isError && <ErrorTemp isError={isError}/>}
@@ -113,6 +115,7 @@ function Character(){
             </section>
         </div>
         </>
+        </AnimatedPage>
         
     )
 }
