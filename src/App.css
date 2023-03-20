@@ -302,14 +302,32 @@ nav .nav-btn{
     font: 500 18px 'Nova Flat';
     color: #fff;}
 /* ABOUT  */
-.about, .documentation{
+.about{
+    padding: 1rem 5rem;    
+    width: 100%;}
+.about article{
+    font: 400 46px;
+    color: #fff;
+    text-align: justify;}
+.about .socials{
+    margin-top: 1.8rem;}
+.about .socials p{
+    font-size: 42px;
+    color: #E26A2C;}
+.social-icons{
     width: 100%;
-    height: 80vh;
     display: flex;
     justify-content: center;
-    align-items: center;
-    color: #fff;
-    font-size: 38px;}
+    align-items: center;}
+.social-icons a{
+    margin-right: 3rem;
+    font-size: 50px;}
+.social-icons a:nth-of-type(1){
+    color: #fff;}
+.social-icons a:nth-of-type(2){
+    color: #8484ff;}
+.social-icons a:nth-of-type(3){
+    color: #df7b49;}
 @media screen and (max-width: 800px) {
     nav{
         justify-content: space-between;
