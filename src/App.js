@@ -6,6 +6,7 @@ import Navbar from './components/navbar';
 import { AnimatePresence } from 'framer-motion';
 import About from './components/about';
 import Documentation from './components/documentation';
+import Error404 from './components/error404';
 
 
 function App() {
@@ -51,6 +52,16 @@ function App() {
             <section>
               <Navbar/>
               <Documentation />
+            </section>
+          }
+        />
+
+        <Route 
+          path='*'
+          element={
+            <section>
+              <Navbar/>
+              <Error404 />
             </section>
           }
         />

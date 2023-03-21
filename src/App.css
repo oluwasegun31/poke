@@ -302,7 +302,10 @@ nav .nav-btn{
     font: 500 18px 'Nova Flat';
     color: #fff;}
 /* ABOUT  */
-.about{
+.documentation{
+    color: #fff;
+}
+.about, .documentation{
     padding: 1rem 5rem;    
     width: 100%;}
 .about article{
@@ -328,6 +331,37 @@ nav .nav-btn{
     color: #8484ff;}
 .social-icons a:nth-of-type(3){
     color: #df7b49;}
+/* ERROR 404 */
+.error-404{
+    width: 100%;
+    padding: 2rem 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.error-404 img{
+    width: 200px;
+    height: 200px;
+}
+.error-404 h1{
+    font-size: 40px;
+    color: #fff;
+    margin: 1rem 0;
+}
+.error-404 button{
+    padding: 1rem 2rem;
+    border: 0;
+    outline: none;
+    background-color: #df7b49;
+    color: #fff;
+    font: 900 18px 'Nova Script';
+    transform: skew(-20deg);
+    cursor: pointer;
+    transition: all 0.5s ease-in-out}
+.error-404 button:hover{
+    background-color: #E26A2C;
+    transition: all 0.5s ease-in-out}
 @media screen and (max-width: 800px) {
     nav{
         justify-content: space-between;
