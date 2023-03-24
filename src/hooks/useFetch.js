@@ -47,7 +47,7 @@ function useFetch(url){
         }, 2000);
     }, [url])
     return(
-        {frontDef, frontShin, backDef, backShin, pokeName, pokeHeight, pokeWeight, pokeBaseExp, pokeAbility, pokeStats, isLoading, setIsLoading, isError}
+        {frontDef, frontShin, backDef, backShin, pokeName, pokeHeight, pokeWeight, pokeBaseExp, pokeAbility, pokeStats, isLoading, setIsLoading, isError, setIsError}
     )
 }
 

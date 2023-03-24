@@ -7,12 +7,13 @@ import Loader from "./loader";
 function Character(){
     const [inputNum, setInputNum] = useState(1);
     const [submitNum, setSubmitNum] = useState(inputNum); 
-    const {frontDef, frontShin, backDef, backShin, pokeName, pokeHeight, pokeWeight, pokeBaseExp, pokeAbility, pokeStats, isLoading, setIsLoading, isError} = useFetch(`https://pokeapi.co/api/v2/pokemon/${submitNum}`)
+    const {frontDef, frontShin, backDef, backShin, pokeName, pokeHeight, pokeWeight, pokeBaseExp, pokeAbility, pokeStats, isLoading, setIsLoading, isError, setIsError} = useFetch(`https://pokeapi.co/api/v2/pokemon/${submitNum}`)
 
     const submitHandle = (e)=>{
         e.preventDefault()
         setSubmitNum(inputNum)
         setIsLoading(true)
+        setIsError(null)
     }
 
     
