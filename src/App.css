@@ -257,7 +257,8 @@ nav .nav-btn{
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    border-left: 8px solid #777676;}
+    border-left: 8px solid #777676;
+    z-index: 100;}
   .errorMess span{
     font: 500 18px 'Nova Flat';
     color: #fff;}
@@ -363,16 +364,13 @@ nav .nav-btn{
     .about{padding: 1rem 10px;}
     .characters{grid-template-columns: 1fr;}
     .characters .character-image{margin-top: 2rem;}
-    .character-image .c-images img{
-        width: 150px;
-        height: 150px;
-    }
+    .character-image .c-images img{ width: 150px; height: 150px;}
+    .errorMess{ width: 100%; top: 2%; right: 1%;}
+    
 }
 @media screen and (max-width: 500px) {
-    .home h1{
-        font-size: 2rem;}
-    .home p{
-        font-size: 16px; width: 95%;}
+    .home h1{font-size: 2rem;}
+    .home p{font-size: 16px; width: 95%;}
     .home .images{
         display: flex;
         justify-content: center;
@@ -383,13 +381,11 @@ nav .nav-btn{
         width: 100px;
         height: 100px;}
     .home .images img:nth-of-type(1), .home .images img:nth-of-type(5){
-        display: none;
-    }
+        display: none;}
     .home .images img:nth-of-type(2), .home .images img:nth-of-type(4){
         position: relative;
         top: 0;
         right: 0;
-        left: 0;
-    }
+        left: 0;}
     
 }

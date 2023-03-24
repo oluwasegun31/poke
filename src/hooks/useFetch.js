@@ -25,7 +25,6 @@ function useFetch(url){
                      return res.json()
                  })
                  .then(data=>{
-                     console.log(data)
                      setFrontDef(data.sprites.front_default)
                      setFrontShin(data.sprites.front_shiny)
                      setBackDef(data.sprites.back_default)
