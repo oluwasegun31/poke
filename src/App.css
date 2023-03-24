@@ -355,16 +355,17 @@ nav .nav-btn{
         top: 1rem;
         right: 1rem;
         color: #000;}
-    /* HOME */
-    .home h1{
-        font-size: 3rem;}
-    .home p{
-        font-size: 18px;}
+    .home h1{font-size: 3rem;}
+    .home p{font-size: 18px;}
     .home .images img{
         width: 120px;
         height: 120px;}
-    .about{
-        padding: 1rem 10px;
+    .about{padding: 1rem 10px;}
+    .characters{grid-template-columns: 1fr;}
+    .characters .character-image{margin-top: 2rem;}
+    .character-image .c-images img{
+        width: 150px;
+        height: 150px;
     }
 }
 @media screen and (max-width: 500px) {
