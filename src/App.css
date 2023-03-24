@@ -3,16 +3,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Nova script', cursive;
-}
+    font-family: 'Nova script', cursive;}
 a{
     text-decoration: none;
-    color: inherit;
-}
+    color: inherit;}
 body{
     background: #fff url("./images/pokeback.svg") no-repeat fixed;
-    background-size: cover;
-}
+    background-size: cover;}
 /* NAVBAR */
 nav{
     position: relative;
@@ -21,29 +18,24 @@ nav{
     justify-content: space-around;
     align-items: center;
     padding: 1rem;
-    z-index: 10;
-}
+    z-index: 10;}
 nav .logo {
     font: bolder 32px 'Nova script';
     color: #E26A2C;
-    cursor: default;
-}
+    cursor: default;}
 .nav-links{
     display: flex;
     justify-content: center;
     align-items: center;
-    list-style: none;
-}
+    list-style: none;}
 .nav-links a{
     margin-right: 1.8rem;
     font: bolder 18px 'Nova Script';
     color: #fff;
-    transition: all 0.3s ease-in-out;
-}
+    transition: all 0.3s ease-in-out;}
 .nav-links a:hover{
     color: #E26A2C;
-    transition: all 0.5s ease-in-out;
-}
+    transition: all 0.5s ease-in-out;}
 nav .nav-btn{
     font-size: 1.8rem;
     padding: 5px;
@@ -52,8 +44,7 @@ nav .nav-btn{
     border: none;
     outline: none;
     color: #000;
-    display: none;
-}
+    display: none;}
 /* HOME */
 .home{
     position: relative;
@@ -64,59 +55,47 @@ nav .nav-btn{
     justify-content: center;
     align-items: center;
     text-align: center;
-}
+    overflow-x: hidden;}
 .home h1{
     font: bolder 80px 'Nova script';
     color: #E26A2C;
-    z-index: 10;
-}
+    z-index: 10;}
 .home p{
     font: 400 23px 'Nova script';
     font-style: italic;
     z-index: 10;
     color: #fff;
-}
+    width: 75%;}
 .home .images img{
     width: 180px;
     height: 180px;
-    margin-top: 2rem;
-}
+    margin-top: 2rem;}
 .home .images img:nth-of-type(1){
     position: absolute;
     top: 40%;
-    left: 10%;
-}
+    left: calc(100% - 90%)}
 .home .images img:nth-of-type(2){
     position: absolute;
     top: 20%;
-    left: 25%;
-}
+    left: 25%;}
 .home .images img:nth-of-type(4){
     position: absolute;
     top: 20%;
-    right: 25%;
-}
+    right: 25%;}
 .home .images img:nth-of-type(5){
     position: absolute;
     top: 40%;
-    right: 11%;
-}
+    right: 11%;}
 .home .arrow-down{
     transform: translateY(45px);
     margin-top: 5rem;
     color: #E26A2C;
     font-size: 3rem;
     cursor: pointer;
-    animation: bounce 2s infinite ease-in-out;
-}
+    animation: bounce 2s infinite ease-in-out;}
 @keyframes bounce {
-    0%, 100%{
-        transform: translateY(35px);
-    }
-    50%{
-        transform: translateY(55px);
-    }
-}
+    0%, 100%{transform: translateY(35px);}
+    50%{transform: translateY(55px);}}
 /* CHARACTERS */
 .contain{position: relative;}
 .characters{
@@ -126,13 +105,11 @@ nav .nav-btn{
     grid-template-rows: auto;
     gap: 1rem;
     place-items: center;
-    padding: 1rem;
-}
+    padding: 1rem;}
 .input-btn{
     position: absolute;
     top: 2%;
-    height: 30px;
-}
+    height: 30px;}
 .input-btn input{
     width: 150px;
     height: 100%;
@@ -143,8 +120,7 @@ nav .nav-btn{
     font: 900 18px 'Nova Script';
     color: #fff;
     background-color: #777676;
-    transform: skew(-20deg);
-}
+    transform: skew(-20deg);}
 .input-btn button{
     width: 50px;
     height: 100%;
@@ -154,49 +130,39 @@ nav .nav-btn{
     background-color: #E26A2C;
     color: #fff;
     cursor: pointer;
-    font: 900 18px 'Nova Script';
-}
+    font: 900 18px 'Nova Script';}
 .character-image{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-}
+    align-items: center;}
 .c-images{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-}
+    align-items: center;}
 .character-image .c-images img{
     width: 250px;
-    height: 250px;
-}
+    height: 250px;}
 .character-image p{
     font: 900 38px 'Nova Script';
-    color: #fff;
-}
+    color: #fff;}
 .c-name, .s-name{
     color: #E26A2C;
-    text-transform: uppercase;
-}
+    text-transform: uppercase;}
 .character-stats, .stats-order{
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto;
-    gap: 0.5rem;
-}
+    gap: 0.5rem;}
 .character-stats p{
     font: 900 26px 'Nova Script';
-    color: #fff;
-}
+    color: #fff;}
 .stats-Mul{
-    display: flex;
-}
+    display: flex;}
 .stats-Mul p{
-    margin-right: 1rem;
-}
+    margin-right: 1rem;}
 /* LOADER */
 .loader-cont{
     position: absolute;
@@ -363,13 +329,10 @@ nav .nav-btn{
     background-color: #E26A2C;
     transition: all 0.5s ease-in-out}
 @media screen and (max-width: 800px) {
-    nav{
-        justify-content: space-between;
-    }
+    nav{justify-content: space-between; z-index: 9999;}
     nav .nav-btn{
         display: flex;
-        color: #fff;
-    }
+        color: #fff;}
     nav .nav-links{
         position: fixed;
         top: 0;
@@ -384,27 +347,51 @@ nav .nav-btn{
         transition: 1s;
         transform: translateX(-100%);
         padding: 1rem;
-        z-index: 50;
-    }
+        z-index: 50;}
     nav .nav-links a{
         margin-bottom: 1.8rem;
-        color: #000;
-    }
+        color: #000;}
     .nav-links a:hover{
         color: #E26A2C;
-        transition: all 0.5s ease-in-out;
-    }
+        transition: all 0.5s ease-in-out;}
     nav .nav-links.responsive_nav{
-        transform: none;
-    }
+        transform: none;}
     .nav-links .nav-close{
         position: absolute;
         top: 1rem;
         right: 1rem;
-        color: #000;
-    }
+        color: #000;}
     /* HOME */
-    .home{
+    .home h1{
+        font-size: 3rem;}
+    .home p{
+        font-size: 18px;}
+    .home .images img{
+        width: 120px;
+        height: 120px;}
+}
+@media screen and (max-width: 500px) {
+    .home h1{
+        font-size: 2rem;}
+    .home p{
+        font-size: 16px; width: 100%;}
+    .home .images{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .home .images img{
+        width: 100px;
+        height: 100px;}
+    .home .images img:nth-of-type(1), .home .images img:nth-of-type(5){
         display: none;
     }
+    .home .images img:nth-of-type(2), .home .images img:nth-of-type(4){
+        position: relative;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+    
 }
