@@ -30,6 +30,7 @@ function Character(){
                  type="text"
                  value={inputNum}
                  onChange = {e=> setInputNum(e.target.value)}
+                 placeholder = "pokemon name or number"
                  />
                 <button>GO</button>
             </form>

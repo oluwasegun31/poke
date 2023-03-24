@@ -44,7 +44,7 @@ function useFetch(url){
                      setIsError(err.message)
                      setIsLoading(false)
                  })
-        }, 5000);
+        }, 2000);
     }, [url])
     return(
         {frontDef, frontShin, backDef, backShin, pokeName, pokeHeight, pokeWeight, pokeBaseExp, pokeAbility, pokeStats, isLoading, setIsLoading, isError}

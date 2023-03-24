@@ -115,6 +115,7 @@ nav .nav-btn{
     color: #fff;
     background-color: #777676;
     transform: skew(-20deg);}
+.input-btn input::placeholder{color: #585757; font-size: 12px;}
 .input-btn button{
     width: 50px;
     height: 100%;
@@ -339,7 +340,6 @@ nav .nav-btn{
         align-items: center;
         justify-content: center;
         background-color: #fff;
-        transition: 1s;
         transform: translateX(-100%);
         padding: 1rem;
         z-index: 50;}
@@ -350,7 +350,7 @@ nav .nav-btn{
         color: #E26A2C;
         transition: all 0.5s ease-in-out;}
     nav .nav-links.responsive_nav{
-        transform: none;}
+        transform: none; transition: transform 1s;}
     .nav-links .nav-close{
         position: absolute;
         top: 1rem;
@@ -366,6 +366,8 @@ nav .nav-btn{
     .characters .character-image{margin-top: 2rem;}
     .character-image .c-images img{ width: 150px; height: 150px;}
     .errorMess{ width: 100%; top: 2%; right: 1%;}
+    .character-image p{font: 900 32px 'Nova Script';}
+    .character-stats p{font: 900 22px 'Nova Script';}
     
 }
 @media screen and (max-width: 500px) {
