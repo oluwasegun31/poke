@@ -1,12 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nova+Script&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Nova script', cursive;}
-a{
-    text-decoration: none;
-    color: inherit;}
+*{margin: 0; padding: 0; box-sizing: border-box; font-family: 'Nova script', cursive;}
+a{ text-decoration: none; color: inherit;}
 body{
     background: #fff url("./images/pokeback.svg") no-repeat fixed;
     background-size: cover;}
@@ -369,12 +363,15 @@ nav .nav-btn{
     .home .images img{
         width: 120px;
         height: 120px;}
+    .about{
+        padding: 1rem 10px;
+    }
 }
 @media screen and (max-width: 500px) {
     .home h1{
         font-size: 2rem;}
     .home p{
-        font-size: 16px; width: 100%;}
+        font-size: 16px; width: 95%;}
     .home .images{
         display: flex;
         justify-content: center;
