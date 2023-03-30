@@ -120,7 +120,6 @@ nav .nav-btn{
     font: 900 18px 'Nova Script';
     color: #fff;
     background-color: #777676;
-    text-transform: lowercase;
     transform: skew(-20deg);}
 .input-btn input::placeholder{color: #585757; font-size: 12px;}
 .input-btn button{
