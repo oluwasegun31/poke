@@ -10,6 +10,7 @@ a:focus, a:visited, a:active{outline: none;}
 body{
     background: #fff url("./images/pokeback.svg") no-repeat fixed;
     background-size: cover;}
+nav, .home, .characters, .about .documentation{max-width: 80rem; margin: 0 auto;}
 /* NAVBAR */
 nav{
     position: relative;
