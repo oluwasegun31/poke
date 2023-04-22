@@ -5,7 +5,6 @@ import Home from './components/home';
 import Navbar from './components/navbar';
 import { AnimatePresence } from 'framer-motion';
 import About from './components/about';
-import Documentation from './components/documentation';
 import Error404 from './components/error404';
 
 
@@ -42,16 +41,6 @@ function App() {
             <section>
               <Navbar/>
               <About />
-            </section>
-          }
-        />
-
-        <Route 
-          path='/documentation'
-          element={
-            <section>
-              <Navbar/>
-              <Documentation />
             </section>
           }
         />
